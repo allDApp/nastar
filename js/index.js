@@ -186,7 +186,7 @@ function save(){
 		var to = dappAddress;
 		var value = "0";
 		var callFunction = "save";
-		var callArgs = "[\"" + name + "		描述:" + content + "\"]";
+		var callArgs = "[\"" + name + "\u003cbr\u003e描述:" + content + "\"]";
 		nebpay.call(to, value, callFunction, callArgs, {
 			listener: function(resp) {
 				console.log(JSON.stringify(resp));
