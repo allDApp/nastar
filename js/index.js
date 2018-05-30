@@ -188,7 +188,7 @@ function save(){
 		var callFunction = "save";
 		var callArgs = "[\"" + name + "\u003cbr\u003e描述:" + content + "\"]";
 		nebpay.call(to, value, callFunction, callArgs, {
-			listener: function cbPush(resp) {
+			listener: function Push(resp) {
 				console.log("response of push: " + JSON.stringify(resp))
 				var respString = JSON.stringify(resp);
 				if(respString.search("rejected by user") !== -1){
